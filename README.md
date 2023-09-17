@@ -2,7 +2,7 @@
 train faster-rcnn tensorflow v2
 
 # guides
-- setup docker and install tensorflow v1 Object Detection API: [here](docs/setup.md)
+- setup docker and install tensorflow v2 Object Detection API: [here](docs/setup.md)
 
 - download pretrained model download: [http://download.tensorflow.org/models/object_detection/tf2/20200711/faster_rcnn_resnet50_v1_640x640_coco17_tpu-8.tar.gz](http://download.tensorflow.org/models/object_detection/tf2/20200711/faster_rcnn_resnet50_v1_640x640_coco17_tpu-8.tar.gz)
 
