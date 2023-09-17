@@ -8,3 +8,5 @@ https://saturncloud.io/blog/how-to-train-tensorflow-object-detection-on-your-own
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 
 https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html
+
+https://stackoverflow.com/questions/63552169/some-python-objects-were-not-bound-to-checkpointed-values

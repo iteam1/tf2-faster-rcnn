@@ -33,8 +33,12 @@
 - train model:
 
         CUDA_VISIBLE_DEVICES=0 python models/research/object_detection/model_main_tf2.py \
-        --pipeline_config_path=path/to/new_config.config \
-        --model_dir=path/to/training_directory \
-        --num_train_steps=num_steps \
-        --num_eval_steps=num_eval_steps \
-        --alsologtostderr
+        --pipeline_config_path=dataset/pipeline.config \
+        --model_dir=training --alsologtostderr
+
+- export trained model:
+
+        python models/research/object_detection/exporter_main_v2.py \
+        --trained_checkpoint_dir training \
+        --output_directory inference_graph \
+        --pipeline_config_path dataset/pipeline.config
