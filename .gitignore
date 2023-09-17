@@ -1,0 +1,25 @@
+# compressed files
+*.tar
+*.gz
+*.zip
+
+# model files
+*.h5
+*.pb
+*.pd
+*.pth
+*.pt
+*.ckpt
+*.pbtxt
+*.onnx
+*.xml
+*.bin
+
+# tensorflow-models
+models
+
+# pretrained model
+
+coco
+training
+checkpoints
