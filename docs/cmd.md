@@ -42,3 +42,13 @@
         --trained_checkpoint_dir training \
         --output_directory inference_graph \
         --pipeline_config_path dataset/pipeline.config
+
+- load trained model and predict: `python scripts/predict_tf2.py`
+
+*Note:*
+
+        # TODO: Your custom label
+        category_index = {
+        1: {'id': 1, 'name': 'red_strawberry'},
+        2: {'id': 2, 'name': 'green_strawberry'},
+        }
