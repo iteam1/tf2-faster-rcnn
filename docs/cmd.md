@@ -7,7 +7,7 @@
         apt-get update && apt-get install ffmpeg libsm6 libxext6  -y && \
         apt-get update && apt-get install libgl1 && \
         apt-get install -y libgl1-mesa-dev && \
-        apt-get install -y libglib2.0-0 &&
+        apt-get install -y libglib2.0-0
 
 - Create train data: `python scripts/xml_to_csv.py -i dataset/train -o dataset/train_labels.csv`
 
@@ -30,4 +30,11 @@
 
 - visualize tfrecord `CUDA_VISIBLE_DEVICES=0 python scripts/visualize_tfrecord.py dataset/train.record dataset/labelmap.pbtxt`
 
-- train model: `CUDA_VISIBLE_DEVICES=0 python models/research/object_detection/model_main.py --alsologtostderr --model_dir=training/ --pipeline_config_path=dataset/pipeline.config`
+- train model:
+
+        CUDA_VISIBLE_DEVICES=0 python models/research/object_detection/model_main_tf2.py \
+        --pipeline_config_path=path/to/new_config.config \
+        --model_dir=path/to/training_directory \
+        --num_train_steps=num_steps \
+        --num_eval_steps=num_eval_steps \
+        --alsologtostderr
